@@ -80,6 +80,8 @@
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
+    <string name="qs_ui_title">Quick Settings UI</string>
+    <string name="android_eleven">Android 11</string>
 
     <!-- Quick settings styles -->
     <string name="default_string">Default</string>
