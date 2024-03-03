@@ -62,13 +62,45 @@
             android:summary="@string/qs_dual_tone_summary"
             android:defaultValue="true" />
 
-    <!-- QS UI -->
+        <!-- QS UI -->
         <com.android.settings.custom.preference.SystemSettingListPreference
-       	android:key="qs_ui_style"
-       	android:title="@string/qs_ui_title"
-       	android:entries="@array/qs_ui_entries"
-       	android:entryValues="@array/qs_ui_values"
-       	android:summary="%s"
-       	android:defaultValue="0" />
+           	android:key="qs_ui_style"
+           	android:title="@string/qs_ui_title"
+           	android:entries="@array/qs_ui_entries"
+           	android:entryValues="@array/qs_ui_values"
+           	android:summary="%s"
+           	android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="0" />
+
+        <com.android.settings.custom.preference.SecureSettingListPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/status_bar_brightness_slider_title"
+            android:entries="@array/status_bar_brightness_slider_entries"
+            android:entryValues="@array/status_bar_brightness_slider_values"
+            android:defaultValue="1" />
+
+        <com.android.settings.custom.preference.SecureSettingListPreference
+            android:key="qs_brightness_slider_position"
+            android:title="@string/status_bar_brightness_slider_position_title"
+            android:entries="@array/status_bar_brightness_slider_position_entries"
+            android:entryValues="@array/status_bar_brightness_slider_position_values"
+            android:dependency="qs_show_brightness_slider"
+            android:defaultValue="0" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_auto_brightness"
+            android:title="@string/status_bar_brightness_slider_auto_title"
+            android:summary="@string/status_bar_brightness_slider_auto_summary"
+            android:dependency="qs_show_brightness_slider"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
