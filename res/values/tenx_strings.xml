@@ -178,4 +178,11 @@
     <string name="flashlight_on_call_rate_title">Rate</string>
     <string name="flashlight_on_call_rate_summary">Flashlight on call blink rate</string>
 
+    <!-- Lockscreen categories -->
+    <string name="lockscreen_interface_category">Interface</string>
+
+    <!-- Lockscreen battery info indicator -->
+    <string name="lockscreen_battery_info_title">Battery info</string>
+    <string name="lockscreen_battery_info_summary">Display battery info when charging</string>
+
 </resources>
